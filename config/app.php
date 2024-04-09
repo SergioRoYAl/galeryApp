@@ -122,5 +122,10 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+    
+    'api_base_url' => env('API_BASE_URL', false),
+    'cloud_account' => env('CLOUD_ACCOUNT', null),
+    'cloud_password' => env('CLOUD_PASSWORD', null),
+    'cloud_login_type' => env('CLOUD_LOGIN_TYPE', 3),
 
 ];

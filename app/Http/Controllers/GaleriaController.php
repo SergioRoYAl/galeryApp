@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cuadro;
 use App\Models\Valor;
 use App\Models\Valoracion;
+use App\Services\APIService;
 use Illuminate\Http\Request;
 
 class GaleriaController extends Controller
@@ -41,4 +42,5 @@ class GaleriaController extends Controller
     }
    }
 
+   
 }

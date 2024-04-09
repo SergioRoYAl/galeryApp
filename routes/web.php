@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\ApiServiceController;
 use App\Http\Controllers\CrudController;
 use App\Http\Controllers\GaleriaController;
 use App\Http\Controllers\ValoracionController;
-use App\Models\Valoracion;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [GaleriaController::class, 'home'] )->name("galeria.home");
@@ -22,4 +22,4 @@ Route::get('/mostrar/{id}/{currencyState}/{valoraciones}', [GaleriaController::c
 
 Route::get('/valorar/{id_cuadro}/{valor}', [ValoracionController::class, 'valorar'])->name("crud.valorar");
 
-
+Route::get('/loginAPI', [ApiServiceController::class, 'add'])->name("login.api");
