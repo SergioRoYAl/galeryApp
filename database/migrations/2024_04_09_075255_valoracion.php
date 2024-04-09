@@ -9,26 +9,22 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
-
-        if (!Schema::hasTable('valoreurodolar')) {
+        if (!Schema::hasTable('cuadro')) {
             Schema::create('valoreurodolar', function (Blueprint $table) {
                 $table->id();
-                $table->double('valored');
+                $table->integer('id_cuadro');
+                $table->integer('valor');
             });
         }
-
-        
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('valoreurodolar');
+        Schema::dropIfExists('valoracion');
     }
 };

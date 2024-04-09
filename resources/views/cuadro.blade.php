@@ -20,7 +20,7 @@
                 <a href="{{route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => "USD", 'valoraciones' => '0'])}}"><i class="fa-solid fa-dollar-sign">USD</i></a>
             )
                 </div>
-                <h3>{{$cuadro->precio}} {{$currencyState}}</h3>
+                <h3>{{number_format($cuadro->precio, 2, ',', '.')}} {{$currencyState}}</h3>
 
                 <p>{{$cuadro->descripcion}}</p>
 
