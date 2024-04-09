@@ -25,7 +25,7 @@ class ValoracionController extends Controller
         $media = $suma / count($valoraciones);
         $cuadro->valoracion = $media;
         $cuadro->save();
-        return redirect()->route('galeria.mostrar', ['id' => $id_cuadro, 'currencyState' => 'EUR']);
+        return redirect()->route('galeria.mostrar', ['id' => $id_cuadro, 'currencyState' => 'EUR', 'valoraciones' => count($valoraciones) ]);
 
     }
 

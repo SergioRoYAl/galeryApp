@@ -15,9 +15,9 @@
                 <h1>{{$cuadro->nombre}}</h1>
                 <img src="{{asset($cuadro->imagen)}}" alt="Visualizacion del cuadro" height="56%" width="84%">
                 <div class="mt-3" role="group" aria-label="Currency Selector">
-            ( <a href="{{route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => "EUR"])}}"><i class="fa-solid fa-euro-sign">EUR</i></a>
+            ( <a href="{{route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => "EUR", 'valoraciones' => '0'])}}"><i class="fa-solid fa-euro-sign">EUR</i></a>
                 or
-                <a href="{{route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => "USD"])}}"><i class="fa-solid fa-dollar-sign">USD</i></a>
+                <a href="{{route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => "USD", 'valoraciones' => '0'])}}"><i class="fa-solid fa-dollar-sign">USD</i></a>
             )
                 </div>
                 <h3>{{$cuadro->precio}} {{$currencyState}}</h3>
@@ -40,7 +40,7 @@
                         <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "3"])}}"><span class="fa-solid fa-star"></span></a>
                         <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "4"])}}"><span class="fa-solid fa-star"></span></a>
                         <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "5"])}}"><span class="fa-solid fa-star"></span></a>
-                        <h5>La media del cuadro es {{$cuadro->valoracion}}</h5>
+                        <h5>La media del cuadro es {{$cuadro->valoracion}} ({{$valoraciones}}) </h5>
                     </div>
                     
                 </div>

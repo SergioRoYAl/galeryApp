@@ -199,7 +199,7 @@
                                 <a href="{{route("crud.eliminar", $cuadro["id"])}}" onclick="return res()"><button src="" class="btn btn-danger"><i class="fa-solid fa-xmark"></i></button></a>
                                 
                                 <button class="btn btn-success"><i class="fa-solid fa-file-image"></i></button>
-                                <a id="gallery-link" href="{{ route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => 'EUR']) }}">
+                                <a id="gallery-link" href="{{ route('galeria.mostrar', ['id' => $cuadro->id, 'currencyState' => 'EUR', 'valoraciones' => $cuadro->id])}}">
   <i class="fa-regular fa-eye"></i>
 </a> 
                             </td>

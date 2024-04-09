@@ -18,7 +18,7 @@ Route::get('/eliminar/{id}', [CrudController::class, 'eliminar'])->name("crud.el
 
 Route::post('/editar', [CrudController::class, 'editar'])->name("crud.editar");
 
-Route::get('/mostrar/{id}/{currencyState}', [GaleriaController::class, 'cuadro'])->name("galeria.mostrar");
+Route::get('/mostrar/{id}/{currencyState}/{valoraciones}', [GaleriaController::class, 'cuadro'])->name("galeria.mostrar");
 
 Route::get('/valorar/{id_cuadro}/{valor}', [ValoracionController::class, 'valorar'])->name("crud.valorar");
 
