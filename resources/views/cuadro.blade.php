@@ -23,6 +23,27 @@
                 <h3>{{$cuadro->precio}} {{$currencyState}}</h3>
 
                 <p>{{$cuadro->descripcion}}</p>
+
+                <br>
+
+                <div class="valoracion d-flex flex-row align-items-center ">
+                @if(session("Perfecto"))
+                        <div >
+                            <h5 class="h5" style="color: green; background-color: lightgreen; border-radius: 5px; text-align: center">{{session("Perfecto")}}</h5>
+                        </div>
+                         
+                        @endif
+                    <h2 class="me-3">Desea valorar el cuadro?</h2>
+                    <div class="flex-column">
+                        <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "1"])}}"><span class="fa-solid fa-star"></span></a>
+                        <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "2"])}}"><span class="fa-solid fa-star"></span></a>
+                        <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "3"])}}"><span class="fa-solid fa-star"></span></a>
+                        <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "4"])}}"><span class="fa-solid fa-star"></span></a>
+                        <a href="{{route('crud.valorar', ['id_cuadro' => $cuadro->id, 'valor' => "5"])}}"><span class="fa-solid fa-star"></span></a>
+                        <h5>La media del cuadro es {{$cuadro->valoracion}}</h5>
+                    </div>
+                    
+                </div>
             </div>
             <div class="col-6 mt-4">
                 <h3>>Ubicación:<br></h3>

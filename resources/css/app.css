@@ -13,6 +13,33 @@
 
 }
 
+.containerIzq{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* adjust half column left */ 
+
+}
+
+.containerDer{
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* adjust half column right */ 
+
+
+}
+
+
 .botones-navbar{
     color: white;
     background-color: rgb(180, 90, 26);

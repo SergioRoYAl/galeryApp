@@ -6,9 +6,7 @@
         </button>
         <div class="collapse navbar-collapse flex-row" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link botones-navbar mr-5" aria-current="page" href="{{ route('galeria.entrada') }}">Entrada</a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link botones-navbar" href="{{ route('galeria.gestion') }}">Gestión</a>
                 </li>
