@@ -53,7 +53,8 @@
             </div>
         </div>
         
-        <a href="{{route("login.api")}}"><h1>gaaaa</h1></a>
+        <a href="{{route("login.api", ['id_cuadro' => $cuadro])}}"><h1>Mandar cuadro</h1></a>
+        <a href="{{route("cargar.ci", ['id_cuadro' => $cuadro])}}"><h1>Mandar cuadro con imagen</h1></a>
         
     </div>
     

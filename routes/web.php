@@ -22,4 +22,6 @@ Route::get('/mostrar/{id}/{currencyState}/{valoraciones}', [GaleriaController::c
 
 Route::get('/valorar/{id_cuadro}/{valor}', [ValoracionController::class, 'valorar'])->name("crud.valorar");
 
-Route::get('/loginAPI', [ApiServiceController::class, 'add'])->name("login.api");
+Route::get('/loginAPI/{id_cuadro}', [ApiServiceController::class, 'add'])->name("login.api");
+
+Route::get('/imagenEtiqueta/{id_cuadro}', [ApiServiceController::class, 'uploadCuadroImagen'])->name("cargar.ci");
