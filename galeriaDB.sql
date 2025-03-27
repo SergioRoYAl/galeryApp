@@ -56,7 +56,7 @@ CREATE TABLE `cuadro` (
 INSERT INTO `cuadro` (`id`, `nombre`, `autor`, `descripcion`, `precio`, `ubicacion`, `imagen`, `qr`, `valoracion`) VALUES
 (3, 'La persistencia de la memoria', 'Salvador Dalí', 'Es un cuadro que representa la permeabilidad de los pensamientos', 2222220, 'Pipo Café, Avenida Rafael Puig Lluvina, Costa Adeje, España', 'images/imagen.jpg', 'qr.png', 3.8),
 (7, 'Guernica', 'Picasso', 'Cuadro de gente en una taberna durante la guerra', 912983000, 'Museo Reina Sofía, Calle de Santa Isabel, Madrid, España', 'images/DE00050.jpg', NULL, 3.35714),
-(22, 'La pelicula dormida', 'Xekos', 'Un cuadro representao como una escena de cine, mudo', 99191900000, 'Asamblea de Madrid, Avenida de Pablo Neruda, Madrid, España', 'images/1.png', NULL, 3),
+(22, 'La pelicula dormida', 'Friday', 'Un cuadro representao como una escena de cine, mudo', 99191900000, 'Asamblea de Madrid, Avenida de Pablo Neruda, Madrid, España', 'images/1.png', NULL, 3),
 (24, 'Porra', '2123', '14124', 12412400, 'e3edita, Calle Hermanos Machado, Puerto del Rosario, España', 'images/uoo.png', NULL, NULL);
 
 -- --------------------------------------------------------
